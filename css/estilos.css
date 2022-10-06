@@ -1,0 +1,35 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.blender{
+     /* Posicionamiento */
+    position:fixed;
+    left: 50%;
+    top: 50%;
+    /* Estilos */
+    transform: translate(-50%,-50%); /*Hubicar contenedor al centro del document*/
+    width: 700px;
+    height: 500px;
+    /* background-color: red; */
+    background-image: url("../img/licuadoraApagada.png");
+    background-size: contain ; /*ajustar imagen dentro del contenedor*/
+    background-position: center;  /*Centrar imagen en contenedor*/
+    background-repeat: no-repeat; /*Para que no se repita la imagen
+     mas de una vez en caso de que cambie de tamaño el div*/
+}
+
+.blender.active{
+    background-image: url("../img/licuadoraEncendida.gif");
+}
+
+.blender-button{
+  /* Posicionamiento */
+    margin: 350px auto 0px;
+    /* Estilos */
+    width: 70px;
+    height: 70px;
+    /* background-color: blue; */
+}
